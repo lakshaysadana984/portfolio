@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping site in India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .cf {
+      background-color: black;
+      height: auto;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: black;
+    }
+
+    .header {
+      background-color: rgb(29, 28, 28);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    /* @media (max-width: 320px){
+      .cf{
+        width: 320px;
+      }
+    } */
+
+
+    .fc {
+      width: 500px;
+      border-radius: 20px;
+      margin-left: 7%;
+    }
+
+    .bt1 {
+      margin-left: auto;
+      border-radius: 40px;
+      margin-right: 3%;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid white;
+    }
+
+    .bt2 {
+      border-radius: 40px;
+      border: 1px solid white;
+      margin-right: 5%;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .search {
+      border-radius: 40px;
+    }
+
+    .logo {
+      height: 50px;
+      width: 250px;
+      margin: auto;
+      border-radius: 25px;
+      user-select: none;
+    }
+
+    .cths {
+      height: 400px;
+    }
+
+    .icons {
+      padding: 10px;
+      margin-left: 5px;
+      border-radius: 40px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .user {
+      padding: 10px;
+      border-radius: 40px;
+      margin-left: auto;
+    }
+
+    .card-offer {
+      color: red;
+    }
+
+    .ac,
+    .bn {
+      margin: auto;
+      transition: transform 0.3s;
+    }
+
+    .ac:hover,
+    .bn:hover {
+      transform: scale(1.1);
+      /* filter: drop-shadow(10px 10px 20px blue); */
+      box-shadow: 10px 10px 100px rgb(31, 142, 233);
+    }
+
+    .card-body {
+      background-color: rgb(206, 203, 203);
+    }
+
+    .card-price .spanIcon {
+      margin-left: 5%;
+      transition: transform 0.3s;
+    }
+
+    .spanIcon:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(10px 10px 20px blue);
+    }
+
+    .navbar {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .perfume h2 {
+      color: white;
+      background-color: #3a383877;
+      border-radius: 10px;
+      width: 30%;
+      text-align: center;
+    }
+
+    .cards {
+      margin-top: 1%;
+      margin-bottom: 1%;
+      padding-left: 3%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      width: 100%;
+      float: left;
+      clear: both;
+      background-color: #3a383877;
+      border-radius: 10px;
+    }
+
+    .c1 {
+      float: left;
+      margin-right: 10px;
+      overflow: hidden;
+    }
+
+
+    .cardt {
+      width: 20%;
+      text-align: left;
+      margin-left: 3.5%;
+    }
+
+    .cardt h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .cardt1 {
+      width: 20%;
+      text-align: left;
+      margin-left: 4.5%;
+    }
+
+    .cardt1 h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .cardt2 {
+      width: 20%;
+      text-align: left;
+    }
+
+    .cardt2 h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .card-header,
+    .footer {
+      background-color: black;
+      color: white;
+    }
+
+    .cb {
+      color: white;
+      position: relative;
+      display: flex;
+    }
+
+
+
+    .ci {
+      height: 200px;
+      transition: transform 0.3s;
+
+    }
+
+    .ci:hover {
+      transform: scale(1.2);
+      /* filter: drop-shadow(10px 10px 20px black); */
+      box-shadow: 10px 10px 500px black;
+    }
+
+    .bt1:hover,
+    .bt2:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .icons:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .barDiv {
+      display: flex;
+    }
+
+    .bar a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .bar {
+      width: 100%;
+    }
+
+
+    .bar a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      padding: 2%;
+    }
+
+
+    .footer span,
+    .copy {
+      color: white;
+    }
+
+
+    /* @media (max-width: 425px) {
+      /* .col-sm-1 
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid cf">
+    <div class="sticky">
+      <div class="header">
+        <form class="d-flex" role="search">
+          <a href="front page.html"><img src="logo.jpg" class="logo"></a>
+          <input class="form-control me-2 fc" type="search" placeholder="Search for Products and Brands"
+            aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-light search" onclick="searchOnHub()" type="submit">search</button>
+          <a href="signup.html" class="bt1">Sign Up</a>
+          <a href="login.html" class="bt2">Log In</a>
+        </form>
+      </div>
+      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4 barDiv">
+          <p class="bar"><a href="front page.html">Home</a></p>
+          <p class="bar"><a href="aboutus.html">About Us</a></p>
+          <p class="bar"><a href="contact.html">Contact Us</a></p>
+          <p class="bar"><a href="your account.html">Your Account</a></p>
+          <p class="bar"><a href="custmer service.html">Customer Services</a></p>
+          <p class="bar"><a href="signout.html">Sign Out</a></p>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+            <a href="cart.html" class="icons"><span><i class="fa-solid fa-cart-shopping"></i>Cart</span></a>
+            <a href="favourites.html" class="icons"><span><i class="fa-regular fa-heart"></i>Favourites</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="the scent.jpg" class="d-block w-100 ig" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="the scent2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="the scent3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev preNext" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next preNext" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+
+
+    <!-- Card1 carousel -->
+
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards">
+            <div class="perfume">
+              <h2>BEARDO BRAND</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="WhiskySmoke.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Whisky Smoke & Godfather EDP Combo</p>
+                <p class="card-offer"><b>OFFER 35%OFF</b></p>
+                <p class="card-price">RS-975 <span><strike>MRP-1,500</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="beardo.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Assorted Premium Perfume Gift Set for Men</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-299 <span><strike>MRP-600</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="dark side.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Dark Side Perfume for Men EDP – Beardo India</p>
+                <p class="card-offer"><b>OFFER 25%OFF</b></p>
+                <p class="card-price">RS-1,499 <span><strike>MRP-2,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="tsunami.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Buy BEARDO Tsunami EDP 100ml Eau de Parfum.</p>
+                <p class="card-offer"><b>OFFER 55%OFF</b></p>
+                <p class="card-price">RS-539 <span><strike>MRP-1,200</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="origin.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Buy Beardo Origin Perfume For Men EDP </p>
+                <p class="card-offer"><b>OFFER 30%OFF</b></p>
+                <p class="card-price">RS-839 <span><strike>MRP-1,200</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards">
+            <div class="beardo">
+              <h2>BEARDO BRAND</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="mariner.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Mariner Perfume EDP - 50ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-799 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="ws single malt.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Whisky Smoke Single Malt Eau De Parfum 50 ml</p>
+                <p class="card-offer"><b>OFFER 17%OFF</b></p>
+                <p class="card-price">RS-999 <span><strike>MRP-1,200</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="god father.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Buy Beardo Godfather EDP Perfume 50ml</p>
+                <p class="card-offer"><b>OFFER 60%OFF</b></p>
+                <p class="card-price">RS-399 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="mafia.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Mafia Perfume Edp 50 Ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-999 <span><strike>MRP-2,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="black musk.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Black Musk Perfume EDP</p>
+                <p class="card-offer"><b>OFFER 40%OFF</b></p>
+                <p class="card-price">RS-1,199 <span><strike>MRP-2,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards">
+            <div class="beardo">
+              <h2>BEARDO BRAND</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="ice blast.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Ice Blast Perfume Roll On - 50ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-299 <span><strike>MRP-600</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="beast power.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Beast Power Perfume Roll On - 50ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-299 <span><strike>MRP-600</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="cooling tac.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Ice Blast Cooling Talc - 250gm</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-249 <span><strike>MRP-500</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="unholy perfume.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo The Unholy Perfume Trio</p>
+                <p class="card-offer"><b>OFFER 30%OFF</b></p>
+                <p class="card-price">RS-3,499 <span><strike>MRP-5,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="whisky smoke trio.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Beardo Whisky Smoke Perfume EDP Trio</p>
+                <p class="card-offer"><b>OFFER 63%OFF</b></p>
+                <p class="card-price">RS-999 <span><strike>MRP-2,608</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Card2 carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards">
+            <div class="perfume">
+              <h2>Bella Vita</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="bv fresh.jpg" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Fresh Unisex Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 41%OFF</b></p>
+                <p class="card-price">RS-539.00 <span><strike>MRP-900</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="skai.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Skai Aquatic Unisex Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 29%OFF</b></p>
+                <p class="card-price">RS-499 <span><strike>MRP-700</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="white oud.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">White Oud Unisex perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-575 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="ceo.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">CEO Man Luxury Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 45%OFF</b></p>
+                <p class="card-price">RS-499 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="OCEANMan.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Ocean Man perfume for men- 100ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-849 <span><strike>MRP-1,100</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards">
+            <div class="perfume">
+              <h2>Bella Vita</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="DATEWOMAN.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Beardo</u></b></h5>
+                <p class="card-text">Date Woman Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-575 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="senorita.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Senorita Woman Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-515 <span><strike>MRP-900</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="CEOManIntense.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">CEO Man Intense perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 23%OFF</b></p>
+                <p class="card-price">RS-849 <span><strike>MRP-1,100</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="HoneyOUD.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Honey Oud Unisex Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-575 <span><strike>MRP-1,000</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="BLUMAN.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">BLU Man perfume for men - 100ml</p>
+                <p class="card-offer"><b>OFFER 23%OFF</b></p>
+                <p class="card-price">RS-849 <span><strike>MRP-1,100</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards">
+            <div class="perfume">
+              <h2>Bella Vita</h2>
+            </div>
+            <div class="card c1" style="width: 15rem;">
+              <img src="hotmess.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Hot Mess Perfume for Women - 100ml</p>
+                <p class="card-offer"><b>OFFER 23%OFF</b></p>
+                <p class="card-price">RS-849 <span><strike>MRP-1,100</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="IMPACT.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Impact Man Perfume for men - 100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-515 <span><strike>MRP-900</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="RoseWoman.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">Rose Woman Luxury Perfume -100ml</p>
+                <p class="card-offer"><b>OFFER 43%OFF</b></p>
+                <p class="card-price">RS-515 <span><strike>MRP-900</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="D.I.V.A.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">D.I.V.A. Woman for women - 100ml</p>
+                <p class="card-offer"><b>OFFER 50%OFF</b></p>
+                <p class="card-price">RS-849 <span><strike>MRP-1,100</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="card c1" style="width: 15rem;">
+              <img src="CEOWOMAN.webp" class="card-img-top ci" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b><u>Bella Vita</u></b></h5>
+                <p class="card-text">CEO Woman Perfume - 100ml</p>
+                <p class="card-offer"><b>OFFER 45%OFF</b></p>
+                <p class="card-price">RS-499 <span><strike>MRP-900</strike>
+                  </span>
+                  <a href="#" class="btn btn-primary spanIcon"><i class="fa-regular fa-heart"></i></a>
+                </p>
+                <a href="#" class="btn btn-primary bn">Buy Now</a>
+                <a href="#" class="btn btn-primary ac">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+
+
+
+
+    <div class="card text-center ctc">
+      <div class="card-header">
+        Get connected with us on social networks:
+        <p class="ch">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-google"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-linkedin"></i></span>
+        </p>
+      </div>
+      <div class="card-body bg-dark cb">
+        <div class="cardt">
+          <h5 class="card-title"><b>COMPANY NAME</b></h5>
+          <p class="card-text" style="text-align: left;">Here you can use rows and columns to organize your footer
+            content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="cardt1">
+          <h5 class="card-title"><b>PRODUCTS</b></h5>
+          <p class="card-text">MDBootstrap</p>
+          <p class="card-text">MDWordPress</p>
+          <p class="card-text">BrandFlow</p>
+          <p class="card-text">Bootstrap Angular</p>
+        </div>
+        <div class="cardt2">
+          <h5 class="card-title"><b>USEFUL LINKS</b></h5>
+          <p class="card-text">Your Account</p>
+          <p class="card-text">Become an Affiliate</p>
+          <p class="card-text">Shipping Rates</p>
+          <p class="card-text">Help</p>
+        </div>
+        <div class="cardt">
+          <h5 class="card-title"><b>CONTACT</b></h5>
+          <p class="card-text"><i class="fa-solid fa-house-chimney"></i>NEW DELHI, ND 110015, INDIA</p>
+          <p class="card-text"><i class="fa-solid fa-envelope"></i>lakshaysadana50@gmail.com</p>
+          <p class="card-text"><i class="fa-solid fa-phone"></i>+001 5456445250</p>
+          <p class="card-text"><i class="fa-solid fa-address-book"></i>+001 2531486520</p>
+        </div>
+      </div>
+      <div class="card-footer text-body-secondary footer">
+        <i class="fa-regular fa-copyright copy"></i><span>2023Copyright:onlinehub.com</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
