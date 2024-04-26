@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshay - Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 19);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            /* background-color: rgb(17, 8, 29); */
+            background: linear-gradient(rgb(17, 8, 29), rgb(45, 21, 77));
+        }
+
+        nav .myImg {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .myImg img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .right a {
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .right a:hover {
+            color: rgb(20, 5, 34);
+            /* background-color: rgb(119, 24, 119); */
+            border: none;
+            background: linear-gradient(rgb(119, 24, 119), rgb(45, 21, 77));
+        }
+
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(119, 24, 119);
+        }
+
+        #element {
+            color: rgb(119, 24, 119);
+        }
+
+        .mainSection {
+            text-align: center;
+        }
+
+        .mainSection h1 {
+            width: 60%;
+            background: linear-gradient(rgb(17, 8, 29), rgb(45, 21, 77));
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 5%;
+        }
+
+        .secondSection {
+            text-align: center;
+        }
+
+        .e-commerce .para {
+            font-size: 1.5rem;
+            margin-bottom: 1.5%;
+        }
+
+        .e-commerce .project1 {
+            border: 1px solid black;
+            text-align: center;
+            padding: 3%;
+            width: auto;
+            display: inline-block;
+            background: radial-gradient(rgb(44, 14, 83), rgb(37, 13, 70), rgb(11, 0, 19));
+            margin: 5px;
+        }
+
+        .e-commerce .project1 .a {
+            border: 1px solid white;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            padding: 5px;
+        }
+
+        .e-commerce .project1 .a:hover {
+            border: none;
+            background: linear-gradient(rgb(119, 24, 119), rgb(45, 21, 77));
+            color: rgb(20, 5, 34);
+        }
+
+        .project1 p {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .project1 .img {
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow: 10px 10px 50px rgb(16, 3, 34);
+        }
+
+        .project1 .img img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        footer {
+            /* background-color: rgb(17, 8, 29); */
+            background: linear-gradient(rgb(15, 5, 29), rgb(45, 21, 77));
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="myImg">
+                <img src="my photo.jpeg" alt="">
+            </div>
+            <div class="left">Lakshay's Portfolio</div>
+            <div class="right">
+                <a href="My Resume/My Updated Resume.pdf">Download my CV</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Lakshay</span>
+
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <div class="mianDiv">
+                <div class="mainSection">
+                    <h1>Projects</h1>
+                </div>
+                <div class="e-commerce">
+                    <p class="para"><u>E-Commerce Website</u></p>
+                    <div class="project1">
+                        <div class="img">
+                            <a href="front page.html"><img src="screenshot.jpeg" alt="" srcset=""></a>
+                        </div>
+                        <p>E-Commerce Website</p>
+                        <a href="front page.html" class="a">Go There</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Lakshay's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; lakshaysportfolio.com | All rights reseved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
+</body>
+</html>
