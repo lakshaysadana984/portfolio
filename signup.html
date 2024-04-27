@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .cf {
+            background-color: rgb(27, 27, 27);
+            padding: 2%;
+        }
+
+        .ctn {
+            width: 40%;
+            background-color: rgb(19, 18, 18);
+            border-radius: 5%;
+            padding: 3%;
+        }
+
+        .input .ft {
+            color: white;
+        }
+
+        .tcpp span {
+            color: white;
+        }
+
+        .signup {
+            color: rgb(247, 247, 247);
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .login span {
+            color: white;
+        }
+
+        .btn {
+            width: 75%;
+            border-radius: 25px;
+        }
+
+        .input input {
+            border-radius: 25px;
+        }
+
+        .tcpp a {
+            text-decoration: none;
+        }
+
+        .login a {
+            text-decoration: none;
+        }
+
+        .img .logo {
+            height: 50px;
+            width: 250px;
+            margin: auto;
+            border-radius: 25px;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid cf">
+        <div class="container ctn">
+            <div class="img" style="padding-bottom: 2%;">
+                <center><a href="front page.html"><img src="logo.jpg" class="logo"></a></center>
+            </div>
+            <div class="signup">
+                <center><big>Sign Up</big></center>
+            </div>
+            <div class="mb-3 input">
+                <p><input type="text" aria-label="First name" class="form-control" placeholder="First Name" required>
+                </p>
+                <p><input type="text" aria-label="Last name" class="form-control" placeholder="Last Name" required></p>
+                <p><input type="text" aria-label="Last name" class="form-control" id="user" placeholder="Username" required></p>
+                <p><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
+                </p>
+                <p><input type="password" placeholder="password" class="form-control"
+                        aria-describedby="passwordHelpBlock" required>
+                <div id="passwordHelpBlock" class="form-text ft">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                    spaces, special characters, or emoji.
+                </div>
+                </p>
+                <p><input type="password" placeholder="Re-Enter password" id="inputPassword5" class="form-control"
+                        aria-describedby="passwordHelpBlock" required></p>
+            </div>
+            <div class="tcpp">
+                <input type="checkbox" required>
+                <span>
+                    By signing up you accept the<a href="#"><b>Terms and Services</b></a> and <a href="#"><b>Privacy
+                            Policy</b></a>
+                </span>
+            </div>
+            <center><button type="button" id="submit" class="btn btn-outline-light">Sign Up</button></center>
+            <div class="login">
+                <center><span>Already have an account?<a href="login.html">Log In</a></span></center>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        submit.addEventListener("click", (e) => {
+            e.preventDefault()
+            let userc = user.value
+            localStorage.setItem("name", JSON.stringify([userc]))
+            console.log(e);
+            // todo.innerHTML = `
+            //     <h1>${titlec}</h1>
+            //     <p>${descc}</p>`
+            // titlec.value = ""
+            // descc.value = ""
+        })
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
