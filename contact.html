@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .cf {
+      height: auto;
+      background-color: black;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: black;
+    }
+
+    .header {
+      background-color: rgb(29, 28, 28);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .search {
+      border-radius: 40px;
+    }
+
+    .logo {
+      height: 50px;
+      width: 250px;
+      margin: auto;
+      border-radius: 25px;
+      user-select: none;
+    }
+
+    .fc {
+      width: 500px;
+      border-radius: 20px;
+      margin-left: 7%;
+    }
+
+    .bt1 {
+      margin-left: auto;
+      border-radius: 40px;
+      margin-right: 3%;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid white;
+    }
+
+    .bt2 {
+      border-radius: 40px;
+      border: 1px solid white;
+      margin-right: 5%;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .bt1:hover,
+    .bt2:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .icons {
+      padding: 10px;
+      margin-left: 5px;
+      border-radius: 40px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .icons:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .barDiv {
+      display: flex;
+    }
+
+    .bar a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .bar {
+      width: 100%;
+    }
+
+    .bar a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+      padding: 2%;
+    }
+
+    .navbar {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contactimg {
+      width: 100%;
+    }
+
+    .cf {
+      width: 100%;
+      height: 100%;
+    }
+
+    .contactusimg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .input {
+      border-radius: 15px;
+      width: 100%;
+      height: 40px;
+      margin: 10px;
+    }
+
+    .para {
+      color: white;
+    }
+
+    .ctnsm {
+      width: 50%;
+      background-color: rgb(19, 18, 18);
+      border-radius: 5%;
+      padding: 3%;
+      margin-top: 3%;
+    }
+
+    .inquiry {
+      background-color: rgb(19, 18, 18);
+      width: 50%;
+      border-radius: 5%;
+      color: white;
+      display: flex;
+      padding: 3%;
+    }
+
+    .inquiry .div {
+      margin-left: 10%;
+    }
+
+    .ctc {
+      margin-top: 1%;
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .cb {
+      color: white;
+      position: relative;
+      display: flex;
+    }
+
+    .cardt {
+      width: 20%;
+      text-align: left;
+      margin-left: 3.5%;
+    }
+
+    .cardt h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .cardt1 {
+      width: 20%;
+      text-align: left;
+      margin-left: 4.5%;
+    }
+
+    .cardt1 h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .cardt2 {
+      width: 20%;
+      text-align: left;
+    }
+
+    .cardt2 h5 {
+      padding-bottom: 10%;
+      text-decoration: underline;
+    }
+
+    .footer span,
+    .copy {
+      color: white;
+    }
+
+    .footer {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid cf">
+    <div class="sticky">
+      <div class="header">
+        <form class="d-flex" role="search">
+          <a href="front page.html"><img src="logo.jpg" class="logo"></a>
+          <input class="form-control me-2 fc" type="search" placeholder="Search for Products and Brands"
+            aria-label="Search">
+          <button class="btn btn-outline-light search" type="submit">search</button>
+          <a href="signup.html" class="bt1">Sign Up</a>
+          <a href="login.html" class="bt2">Log In</a>
+        </form>
+      </div>
+      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4 barDiv">
+          <p class="bar"><a href="front page.html">Home</a></p>
+          <p class="bar"><a href="aboutus.html">About Us</a></p>
+          <p class="bar"><a href="contact.html">Contact Us</a></p>
+          <p class="bar"><a href="your account.html">Your Account</a></p>
+          <p class="bar"><a href="custmer service.html">Customer Services</a></p>
+          <p class="bar"><a href="signout.html">Sign Out</a></p>
+
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+            <a href="cart.html" class="icons"><span><i class="fa-solid fa-cart-shopping"></i>Cart</span></a>
+            <a href="favourites.html" class="icons"><span><i class="fa-regular fa-heart"></i>Favourites</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="contact">
+      <img src="contact.jpg" class="contactimg">
+    </div>
+    <div class="container-fluid cf">
+      <div class="page">
+        <center><u style="color: white;">
+            <h1 style="color: wheat; margin-top: 1%;">Query Form</h1>
+          </u></center>
+        <div class="container-sm ctnsm">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label para">Full Name</label>
+            <input class="form-control" type="text" placeholder="Full Name" aria-label="default input example">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label para">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label para">Your Query or Message</label>
+            <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+          </div>
+          <center><button type="button" class="btn btn-outline-light">Send</button></center>
+        </div>
+        <center><u style="color: white;">
+            <h1 style="color: wheat;">Inquiry Number</h1>
+          </u></center>
+        <div class="container-fluid inquiry">
+          <div class="div">Our Inquiry Number:
+            <br>
+            <i class="fa-solid fa-address-book"></i>+001 2531486520
+            <br>
+            <i class="fa-solid fa-phone"></i>+001 5456445250
+          </div>
+          <div class="div">Email: <br>
+            <i class="fa-solid fa-envelope"></i>lakshaysadana50@gmail.com
+          </div>
+        </div>
+      </div>
+      <div class="card text-center ctc">
+        <div class="card-header">
+          Get connected with us on social networks:
+          <p class="ch">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-google"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+          </p>
+        </div>
+        <div class="card-body bg-dark cb">
+          <div class="cardt">
+            <h5 class="card-title"><b>COMPANY NAME</b></h5>
+            <p class="card-text" style="text-align: left;">Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="cardt1">
+            <h5 class="card-title"><b>PRODUCTS</b></h5>
+            <p class="card-text">MDBootstrap</p>
+            <p class="card-text">MDWordPress</p>
+            <p class="card-text">BrandFlow</p>
+            <p class="card-text">Bootstrap Angular</p>
+          </div>
+          <div class="cardt2">
+            <h5 class="card-title"><b>USEFUL LINKS</b></h5>
+            <p class="card-text">Your Account</p>
+            <p class="card-text">Become an Affiliate</p>
+            <p class="card-text">Shipping Rates</p>
+            <p class="card-text">Help</p>
+          </div>
+          <div class="cardt">
+            <h5 class="card-title"><b>CONTACT</b></h5>
+            <p class="card-text"><i class="fa-solid fa-house-chimney"></i>NEW DELHI, ND 110015, INDIA</p>
+            <p class="card-text"><i class="fa-solid fa-envelope"></i>lakshaysadana50@gmail.com</p>
+            <p class="card-text"><i class="fa-solid fa-phone"></i>+001 5456445250</p>
+            <p class="card-text"><i class="fa-solid fa-address-book"></i>+001 2531486520</p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary footer">
+          <i class="fa-regular fa-copyright copy"></i><span>2023Copyright:onlinehubcom</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
